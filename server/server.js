@@ -30,7 +30,7 @@ app.post('/', async (req, res) => {
         const response = await openai.createCompletion({
             model: "text-davinci-003",
             prompt: `${prompt}`,
-            max_tokens: 3000,
+            max_tokens: 2000,
             n: 1,
             top_p: 1,
             frequency_penalty: 0.5,
@@ -49,3 +49,6 @@ app.post('/', async (req, res) => {
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
+
+// OpenAI API integration code
+// paste the code you got from OpenAI here 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
